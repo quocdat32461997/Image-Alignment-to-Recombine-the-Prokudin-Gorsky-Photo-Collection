@@ -5,4 +5,5 @@ Hints and lectures cound be found in the following linkes:
   https://cs.brown.edu/courses/csci1290/lectures/02_ImagingBasics.pdf
   http://cs.brown.edu/courses/cs129/results/proj1/rkuppig/
   http://cs.brown.edu/courses/csci1290/asgn/proj1_alignment/index.html
+  http://acberg.com/comp_photog/assignment1.html
   
