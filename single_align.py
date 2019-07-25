@@ -4,7 +4,7 @@ from math import pow
 
 """
 	compute_similarity(to_be_aligned_image, to_align_image, searching_range):
-		To find the pixel/index where two channels are best aligned by calculating the sum_of_squared_differences over 50 pixels by default
+		To find the pixel/index where channels are best aligned by calculating the sum_of_squared_differences over 50 pixels by default
 		parameters:
 			to_be_aligned_image - a ndarray of the image to be aligned
 			to_align_image - a ndarray of the image to align
@@ -61,3 +61,24 @@ def compute_similarity(to_be_aligned_image, to_align_image, searching_range = No
 	arg_max_y = arg_max_index - (arg_max_x * 50)	
 
 	return [arg_max_x, arg_max_y] 
+
+"""
+	merge_channels_to_channel(channel_b, channel_r, channel_g):
+		To merge 3 colored channels to an image. The order of channels is RGB.
+		The result image is an multi-dimension array (256, 256, 3)
+		Each bit of a channel is represented by 8-bit that value ranges 0-256	
+"""
+def merge_channels_to_image(channel_r, channel_g, channel_b):
+	#define colored_image
+	colored_image = np.empty([256, 256, 3])
+
+	#insert channel_r into colored_image
+	colored_image[,, 1] = channel_r
+	
+	#insert channel_g into colored_image
+	colored_image[,, 2] = channel_g
+
+	#insert channel_b into colored_image
+	colored_image[,, 3] = channel_b 	
+
+	return colored_image

@@ -11,6 +11,7 @@ def main():
 	print(R_image.shape)
 	print(G_image.shape)
 	print(B_image.shape)
+
 	#align images in order R > G > B
 	aligned_RG_image = compute_similarity(R_image, G_image)	
 	print(aligned_RG_image)
