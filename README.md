@@ -7,3 +7,7 @@ Hints and lectures cound be found in the following linkes:
   http://cs.brown.edu/courses/csci1290/asgn/proj1_alignment/index.html
   http://acberg.com/comp_photog/assignment1.html
   
+
+Tech stacks:
+  CV
+  Python
