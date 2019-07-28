@@ -6,8 +6,8 @@ Hints and lectures cound be found in the following linkes:
   http://cs.brown.edu/courses/cs129/results/proj1/rkuppig/
   http://cs.brown.edu/courses/csci1290/asgn/proj1_alignment/index.html
   http://acberg.com/comp_photog/assignment1.html
+  http://paulbourke.net/miscellaneous/correlate/
   
-
 Tech stacks:
   CV
   Python
