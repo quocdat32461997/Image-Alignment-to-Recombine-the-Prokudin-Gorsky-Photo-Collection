@@ -14,7 +14,6 @@ def divide_RGB_plates(img_path):
 		img = img[0:int(img.shape[0] / 3) * 3, :]	
 	#Crop images into 3 RGB-channel images
 	height = img.shape[0]
-	print(height)
 	width = img.shape[1]
 	B_image = img[:int(height/3), 0:(width - 1)]
 	G_image = img[int(height/3):int(2*height/3), 0:(width - 1)]
