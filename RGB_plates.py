@@ -8,6 +8,7 @@ def divide_RGB_plates(img_path):
 	#Re-size image
 	if img.shape[0] % 3 != 0:
 		img = img[:int(img.shape[0] / 3) * 3, :]
+
 	#Crop images into 3 RGB-channel images
 	height = int(img.shape[0] / 3)
 	b = img[:height, :]
