@@ -12,7 +12,11 @@ def main():
 	r, g, b = divide_RGB_plates(img_path)
 
 	#ssd_align
+	#colored_iamge = ssd_align.merege_channels_to_image(r, g,b)
+	
+	#ncc_align
 	colored_image = ncc_align.merge_channels_to_image(r, g, b) 
+
 	cv2.imshow('colored_image', colored_image)
 	cv2.waitKey(0)
 	cv2.destroyAllWindows()
